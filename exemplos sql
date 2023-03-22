@@ -1,0 +1,14 @@
+/** mudando as informaçoes de inglês para portugues na tabela*/
+UPDATE filme_series SET main_genre "fantasia" WHERE main_genre = 'fantasy';
+
+/** deletando as informaçoes da tabela*/ 
+DELETE FROM pessoas WHERE 'comedia'
+
+/** select especifico*/
+SELECT * FROM `filme_series` WHERE pais = 'argentina';
+
+//** visualizar so oq é estados unidos da america*/
+SELECT * FROM filme_series WHERE pais = 'estados unidos america';
+
+//** especifica um termo */
+SELECT * FROM filme_series WHERE pais = 'estados unidos da america' AND filme_serie = 'serie';
